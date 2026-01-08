@@ -1,0 +1,12 @@
+<%# always use underscore for partials like _links.html.erb %>
+
+
+<%= link_to "About Us", controller: :pages, action: :about_us %>
+ <%# old style of defining path %>
+
+<%= link_to "Contact US" , contact_us_path  ,target: '_blank' %>
+<%# here adding that target: '_blank' will open the link in new tab %>
+
+<%= link_to "Privacy Policy", "/privacy_policy"%>
+
+<%# three ways to define path in the html.erb file %>

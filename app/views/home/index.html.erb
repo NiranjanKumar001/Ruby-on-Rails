@@ -3,11 +3,4 @@
 <h1><%= @title %></h1>
 <p><%= @subtitle %></p>
 
-
-<%= link_to "About Us", controller: :pages, action: :about_us %>
-
-<%= link_to "Contact US" , contact_us_path   %>
-
-<%= link_to "Privacy Policy", "/privacy_policy"%>
-
-<%# three ways to define path in the html.erb file %>
+<%= render 'shared/links' %>
